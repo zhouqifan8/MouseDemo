@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:imeOptions="flagNoFullscreen|flagNoExtractUi"
+    tools:context=".remote.MouseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.demo.mouse.remote.SessionView
+            android:id="@+id/sessionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawingCacheQuality="low"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone|flagNoExtractUi" />
+
+        <com.demo.mouse.remote.TouchPointerView
+            android:id="@+id/touchPointerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mouse"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>
